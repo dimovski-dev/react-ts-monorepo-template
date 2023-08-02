@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["vite/client", "vitest"],
+    "baseUrl": "../../",
+    "paths": {
+      "@app/*": ["apps/some-app/src/app/*"],
+      "@packages/*": ["packages/*"],
+      "@pages/*": ["apps/some-app/src/pages/*"],
+      "@widgets/*": ["apps/some-app/src/widgets/*"],
+      "@features/*": ["apps/some-app/src/features/*"],
+      "@entities/*": ["apps/some-app/src/entities/*"],
+      "@shared/*": ["apps/some-app/src/shared/*"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "../../tsconfig.base.json"
+}
